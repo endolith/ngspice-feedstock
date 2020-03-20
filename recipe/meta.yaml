@@ -1,13 +1,13 @@
 {% set name = "ngspice" %}
-{% set version = "31" %}
+{% set version = "30" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://versaweb.dl.sourceforge.net/project/ngspice/ng-spice-rework/{{version}}/ngspice-{{version}}.tar.gz
-  sha256: 845f3b0c962e47ded051dfbc134c3c1e4ac925c9f0ce1cb3df64eb9b9da5c282
+  url: https://svwh.dl.sourceforge.net/project/ngspice/ng-spice-rework/{{version}}/ngspice-{{version}}.tar.gz
+  sha256: 08fe0e2f3768059411328a33e736df441d7e6e7304f8dad0ed5f28e15d936097
 
   patches:
    - patches/libtoolize-name.patch  # [osx]
